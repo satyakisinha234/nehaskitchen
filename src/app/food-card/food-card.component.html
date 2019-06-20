@@ -1,6 +1,8 @@
-<div class="d-sm-flex flex-row">
-  <div class="p-2">
+<ng-container >
+<div class="d-sm-flex flex-row" *ngFor="let row of _foodMenu; let i=index">
+  <div class="p-2" *ngFor="let innrrow of row.row">
     <div class="card box" style="width: 18rem;">
+      <!-- <h1 class="ribbon">Just a Rounded Ribbon</h1> -->
       <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 align="left" class="card-title">Biryani</h5>
@@ -9,115 +11,13 @@
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
       <div class="card-footer">
-          <i class="fa fa-star" aria-hidden="true" style="padding-right: 2rem;color:goldenrod"><span><small class="text-muted">4.0</small></span></i>
+          <i class="fa fa-star" aria-hidden="true" style="padding-right: 2rem;color:goldenrod"><span><small class="text-muted">{{innrrow.rating}}</small></span></i>
           <small class="text-muted" style="padding-right: 2rem">45 mins.</small>  
           <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
         </div>
     </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  
+  </div> 
 
 </div>
+</ng-container>
 
-<div class="d-sm-flex flex-row">
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  <div class="p-2">
-    <div class="card box" style="width: 18rem;">
-      <img class="card-img-top" style="height: 10rem;" src="/assets/pic_test.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">{{"20" | currency:"&#8377;"}}</small>
-      </div>
-    </div>
-  </div>
-  
-
-</div>
